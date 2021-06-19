@@ -11,7 +11,7 @@ const Footer = () => {
                     <img />
                 </div>
                 <div id="twitter">
-                    <p>twitter</p>
+                    <p>Codepen</p>
                     <img />
                 </div>
                 <div id="instagram">
