@@ -1,0 +1,22 @@
+.footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+
+        p {
+            margin: 10px;
+        }
+    }
+}
