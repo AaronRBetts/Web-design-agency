@@ -8,7 +8,7 @@ const About = () => {
         <section id="about">
             <div id="about-text">
                 <SectionHeader title={"About us"} subTitle={"Who we are and what we do"} />
-                <h1>UX Geeks are a team of <strong>passionate web designers and developers. </strong><br /><br />
+                <h1>Web Geeks are a team of <strong>passionate web designers and developers. </strong><br /><br />
                     We design, develop & deploy unique web experiences that show your audience what your brand has to offer.
                 </h1>
             </div>

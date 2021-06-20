@@ -56,10 +56,8 @@ class Showcase extends React.Component {
 	   $('#pagination-wrap ul').append(li);	   
 	});
 	
-	//counter
 	countSlides();
 	
-	//pagination
 	pagination();
 	
 	//hide/show controls/btns when hover
@@ -79,7 +77,6 @@ class Showcase extends React.Component {
         if(pos===-1){ pos = totalSlides-1; }
         $('#slider-wrap ul#slider').css('left', -(sliderWidth*pos)); 	
         
-        //*> optional
         countSlides();
         pagination();
     }
@@ -93,7 +90,6 @@ class Showcase extends React.Component {
         if(pos===totalSlides){ pos = 0; }
         $('#slider-wrap ul#slider').css('left', -(sliderWidth*pos)); 
         
-        //*> optional 
         countSlides();
         pagination();
     }
