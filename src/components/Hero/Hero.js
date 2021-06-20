@@ -8,7 +8,7 @@ import carouselB from '../../images/portfolio.svg'
 import carouselC from '../../images/business.svg'
 import { FaGreaterThan, FaLessThan, FaMailBulk } from 'react-icons/fa'
 import HeroBg from '../../images/Hero_bg.svg'
-import SectionHeader from '../Header/Header'
+// import SectionHeader from '../Header/Header'
 
 class Hero extends React.Component {
 
@@ -21,10 +21,10 @@ class Hero extends React.Component {
 
         function rotate(e){
 
-        if(e.data.d=="n"){
+        if(e.data.d==="n"){
             currdeg = currdeg - 120;
         }
-        if(e.data.d=="p"){
+        if(e.data.d==="p"){
             currdeg = currdeg + 120;
         }
 
@@ -58,22 +58,22 @@ class Hero extends React.Component {
       render() {
         return (
             <section id="hero">
-                <img id="hero-bg" src={HeroBg}/>
+                <img id="hero-bg" alt="Hero background" src={HeroBg}/>
                 <div id="showcaseWrapper">
                     <div id="showcase">
                     <button className="slide" id="prev"><FaLessThan className="card" /></button>
                     <div className="container">
                         <div className="carousel">
                             <div id="carousel-ecom">
-                                <img className="carousel-img" src={carouselA} />
+                                <img className="carousel-img" alt="carousel ecommerce" src={carouselA} />
                                 <h2>E-commerce</h2>
                             </div>
                             <div id="carousel-portfolio">
-                                <img className="carousel-img" src={carouselB} />
+                                <img className="carousel-img" alt="carousel portfolio" src={carouselB} />
                                 <h2>Portfolio</h2>
                             </div>
                             <div id="carousel-brand">
-                                <img className="carousel-img" src={carouselC} />
+                                <img className="carousel-img" alt="carousel business" src={carouselC} />
                                 <h2>Business</h2>
                             </div>
                         </div>

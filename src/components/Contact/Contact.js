@@ -1,6 +1,6 @@
 import React from 'react'
 import './Contact.scss'
-import Contactbg from '../../images/contactbg.png'
+// import Contactbg from '../../images/contactbg.png'
 
 const Contact = () => {
     return (

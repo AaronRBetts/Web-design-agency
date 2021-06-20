@@ -5,7 +5,7 @@ import ProcessImg from '../../images/ProcessImg.png'
 const Process = () => {
     return (
         <div id='process'>
-            <img id="process-img" src={ProcessImg} />
+            <img id="process-img" alt="process" src={ProcessImg} />
         </div>
     )
 }

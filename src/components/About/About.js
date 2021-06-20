@@ -12,7 +12,7 @@ const About = () => {
                     We design, develop & deploy unique web experiences that show your audience what your brand has to offer.
                 </h1>
             </div>
-            <img id="about-img" src={Aboutimg}/>
+            <img id="about-img" alt="about" src={Aboutimg}/>
         </section>
     )
 }

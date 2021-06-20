@@ -7,7 +7,7 @@ import AaronImg from '../../images/aaronrbetts_full.png'
 import DiatarratImg from '../../images/Diatarrat_full.png'
 import MalmaksImg from '../../images/malmaks_alt.png'
 import MukamatImg from '../../images/mukamat_alt.png'
-import { FaGit, FaFigma, FaWordpressSimple, FaNodeJs, FaBootstrap, FaSass, FaShopify, FaGreaterThan, FaLessThan } from 'react-icons/fa'
+import { FaFigma, FaWordpressSimple, FaBootstrap, FaSass, FaShopify, FaGreaterThan, FaLessThan } from 'react-icons/fa'
 import { SiJquery } from 'react-icons/si'
 // import Projects from './Projects.json'
 
@@ -76,7 +76,7 @@ class Showcase extends React.Component {
     ************/
     function slideLeft(){
         pos--;
-        if(pos==-1){ pos = totalSlides-1; }
+        if(pos===-1){ pos = totalSlides-1; }
         $('#slider-wrap ul#slider').css('left', -(sliderWidth*pos)); 	
         
         //*> optional
@@ -90,7 +90,7 @@ class Showcase extends React.Component {
     *************/
     function slideRight(){
         pos++;
-        if(pos==totalSlides){ pos = 0; }
+        if(pos===totalSlides){ pos = 0; }
         $('#slider-wrap ul#slider').css('left', -(sliderWidth*pos)); 
         
         //*> optional 

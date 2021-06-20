@@ -4,7 +4,7 @@ import Hero from './Hero/Hero'
 import Sidebar from './Sidebar/Sidebar'
 import About from './About/About'
 import Showcase from './Showcase/Showcase'
-import Process from './Process/Process'
+// import Process from './Process/Process'
 import Contact from './Contact/Contact'
 import Footer from './Footer/Footer'
 

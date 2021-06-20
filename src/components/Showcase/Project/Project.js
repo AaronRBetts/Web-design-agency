@@ -1,6 +1,5 @@
 import React from 'react'
 import './Project.scss'
-import $ from 'jquery'
 
 class Project extends React.Component {
 
@@ -20,7 +19,7 @@ class Project extends React.Component {
                     </div>
                     <div className="project-display">
                         {/* <img className="project-bg" src={Projectbg}></img> */}
-                        <img className="project-img" src={this.props.projectImg} />
+                        <img className="project-img" alt={this.props.projectName} src={this.props.projectImg} />
                     </div>
                     <div className="project-info">
                         <div className="info-card card">
@@ -29,7 +28,7 @@ class Project extends React.Component {
                             <div className="tools-info">
 
                                 {this.props.tools.map((tool, index) => 
-                                    <div key={tool,index} className="tool">
+                                    <div key={tool + index} className="tool">
                                         <h4>{tool.name}</h4>
                                         <a href={tool.siteLink}>{tool.icon}</a>
                                     </div>
