@@ -4,19 +4,25 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     
+    a {
+        text-decoration: none;
+        color: #ecf0f1;
+    }
+
+    svg {
+        color: #e67e22;
+    }
+    
 
     h1 {
         font-size: 3rem;
+        margin: 20px;
     }
 
     .footer-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        text-align: center;
+        align-content: center;
 
         p {
-            margin: 10px;
         }
     }
 }

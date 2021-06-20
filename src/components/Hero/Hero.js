@@ -20,12 +20,31 @@ class Hero extends React.Component {
         $("#prev").on("click", { d: "p" }, rotate);
 
         function rotate(e){
+
         if(e.data.d=="n"){
             currdeg = currdeg - 120;
         }
         if(e.data.d=="p"){
             currdeg = currdeg + 120;
         }
+
+        switch (currdeg % 360) {
+            case 0:
+                console.log("0")
+                break;
+            case 120 || -240:
+                console.log("120")
+                
+                break;
+            case 240 || -120:
+                console.log("240")
+                
+                break;
+        
+            default:
+                break;
+        }
+
         carousel.css({
             "-webkit-transform": "rotateY("+currdeg+"deg)",
             "-moz-transform": "rotateY("+currdeg+"deg)",
@@ -41,7 +60,6 @@ class Hero extends React.Component {
             <section id="hero">
                 <img id="hero-bg" src={HeroBg}/>
                 <div id="showcaseWrapper">
-                    <h2 className="heading">We're your</h2>
                     <div id="showcase">
                     <button className="slide" id="prev"><FaLessThan className="card" /></button>
                     <div className="container">
@@ -62,12 +80,11 @@ class Hero extends React.Component {
                     </div>
                     <button className="slide" id="next"><FaGreaterThan className="card" /></button>
                     </div>
-                    <h2 className="heading">Web wizards</h2>
                 </div>
                 {/* <img id="hero-image" src={HeroImage}/> */}
                 <div id="title-section" className="card">
-                    <h1>We made this</h1>
-                    <h3>We can make you one too</h3>
+                    <h1>We're your Web Wizards</h1>
+                    <h3>Like the site? We'll make you one.</h3>
                     <Link to="contact"
                                 smooth={true}
                                 duration={500}

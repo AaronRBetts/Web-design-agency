@@ -1,11 +1,12 @@
 #contact {
+    z-index: 1000;
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
     overflow: hidden;
     justify-content: center;
     
-    h2 {
+    h1 {
         text-align: center;
     }
 }
@@ -22,13 +23,14 @@
 
 #bg-container {
     position: absolute;
-    width: 100%;
+    width: auto;
     height: 100%;
     display: flex;
     overflow: hidden;
 }
 
 .contactContainer {
+    justify-content: center;
     font-size: 1.5rem;
     padding: 20px !important;
 
@@ -37,26 +39,36 @@
 
 
     label {
-        
+        padding: 5px;
         margin-right: 10px;
         justify-self: flex-end;
     }
     
     textarea {
+        outline: none;
+        padding: 5px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         width: 700px;
         min-width: 200px;
-        height: 100px;
         border: none;
         margin: 0px 0 10px;
+        font-size: 1.5rem;
+        resize: none;
+
+        &:active {
+            border: none;
+            outline: none;
+        }
     }
 
     @media screen and (max-width: 1024px) {
+        width: 100%;
+        min-width: none;
         grid-template-columns: 1fr;
+        justify-items: center;
 
         textarea {
-            width: 100%;
-            width: 700px;
+            width: 80%;
         }
 
         label {
@@ -66,6 +78,7 @@
 
     @media screen and (max-width: 768px) {
         width: 100%;
+        min-width: none;
         grid-template-columns: 1fr;    
 
 

@@ -14,21 +14,21 @@ const Sidebar = ({ isOpen, toggle }) => {
                 </div>
                 <div className="sidebarWrapper">
                     <ul className="sidebarContainer">
-                        <Link to="services"
+                        <Link to="hero"
                                     smooth={true}
                                     duration={500}
                                     spy={true}
-                                    offset={-80} onClick={toggle}>Services</Link>
+                                    offset={-80} onClick={toggle}>Home</Link>
+                        <Link to="about"
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    offset={-80} onClick={toggle}>About us</Link>
                         <Link to="work"
                                     smooth={true}
                                     duration={500}
                                     spy={true}
                                     offset={-80} onClick={toggle}>Our work</Link>
-                        <Link to="about"
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    offset={-80} onClick={toggle}>About</Link>
                         <Link to="contact"
                                     smooth={true}
                                     duration={500}

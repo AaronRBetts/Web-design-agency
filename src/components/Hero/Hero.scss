@@ -71,9 +71,9 @@
 }
 
 #title-section {
+    width: 100%;
     margin: auto;
     padding: 20px;
-    width: fit-content;
     
     display: flex;
     flex-direction: column;
@@ -87,7 +87,7 @@
         font-size: 6rem;
         text-decoration: underline;
         text-decoration-thickness: 10px;
-        text-decoration-color: #6CFBAD;
+        text-decoration-color: #2ecc71;
         
 
         @media screen and (max-width: 1024px) {
@@ -97,6 +97,7 @@
     }
 
     h3 {
+        color: #e67e22;
         font-size: 1rem;
         font-style: normal;
         font-weight: 600;
@@ -105,21 +106,22 @@
     }
 
     a {
-        width: 100px;
+        font-size: xx-large;
+        color: #ecf0f1;;
+        width: 200px;
         display: flex;
         justify-content: space-evenly;
         
-        box-shadow: inset 3px 3px 2px rgba(255, 255, 255, 0.3), 
-        inset -3px -3px 2px rgba(0, 0, 0, 0.3);
+        
+        box-shadow: -3px -3px 10px #ffffff4d, 
+        3px 3px 10px #0000004d;
         // background: linear-gradient(135deg,rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
         border-radius: 5px;
         transition: all 0.2s ease;
 
             &:hover {
-            box-shadow: none;
-            color: purple;
+                box-shadow: none;
             }
-        color: #000;
         padding: 10px;
         cursor: pointer;
 
@@ -138,7 +140,7 @@
 }
 
 .container {
-    margin: 0 120px 70px;
+    margin: 80px 120px;
     width: 300px;
     height: 200px;
     position: relative;
@@ -178,12 +180,12 @@
             h2 {
                 font-size: 2rem;
                 margin: 0;
-                color: white;
+                color: #ecf0f1;;
                 background:rgba(0, 0, 0, 0.8);
                 border-radius: 5px;
                 text-decoration: underline;
                 text-decoration-thickness: 5px;
-                text-decoration-color: #6CFBAD;
+                text-decoration-color: #2ecc71;
             }
 
             img {

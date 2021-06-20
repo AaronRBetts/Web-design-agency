@@ -6,9 +6,15 @@
 
 //clear background card
 .card {
-    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.3),
-                -10px -10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow:
+                10px 10px 20px rgba(0, 0, 0, 0.3);
                 background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+                //background-color: #2ecc71;
+                color: #ecf0f1;
+
+                
+
+                
 }
 
 .smallCard {

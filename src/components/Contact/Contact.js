@@ -9,16 +9,19 @@ const Contact = () => {
                 <img id="contact-bg" src={Contactbg} />
             </div> */}
             <div className="card header" >
-                <h2>Contact us</h2>
+                <h1>Contact us</h1>
                 <div className="contactContainer">
                     <label>Name</label>
-                    <textarea />
+                    <textarea placeholder="Aaron Smith" rows="1"/>
                     <label>email</label>
-                    <textarea />
+                    <textarea placeholder="AaronSmith@gmail.com" rows="1" />
+                    <label>phone</label>
+                    <textarea placeholder="044 123 4567" rows="1" />
                     <label>message</label>
-                    <textarea />
+                    <textarea placeholder="AaronSmith@gmail.com" rows="5" />
                 </div>
             </div>
+            
         </div>
     )
 }

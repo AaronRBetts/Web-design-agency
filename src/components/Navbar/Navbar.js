@@ -12,7 +12,7 @@ const Navbar = ({ toggle }) => {
                             duration={500}
                             spy={true}
                             offset={-80}>
-                                UX Geeks</Link>
+                                Web Geeks</Link>
                 </h1>
             <ul id="nav-links">
                 <Link className="spy" to="about"

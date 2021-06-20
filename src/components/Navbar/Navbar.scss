@@ -4,7 +4,7 @@
     height: 80px;
     left: 0px;
     top: 0px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(44, 62, 80, 0.8);
     box-shadow: -3px -3px 20px rgba(0, 0, 0, 0.3),
     0px 0px 20px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -13,6 +13,10 @@
     align-items: center;
     z-index: 998;
     cursor: pointer;
+
+    #nav-logo {
+        color: #d35400;
+    }
 }
 
 #menu-btn {
@@ -26,7 +30,7 @@
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        color: #FF6A3D;
+        color: #d35400;
     }
 }
 
@@ -41,11 +45,15 @@
 }
 
 #nav-links > a {
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none;
-    color: #000;
+    color: #ecf0f1;
     list-style: none;
     margin: 20px;
+
+    &:hover {
+        color: #d35400;
+    }
 }
 
 .spy {
@@ -53,6 +61,6 @@
     transition: all 0.3s ease-in-out;
 
     &.active {
-    border-bottom: 5px solid #6CFBAD;
+    border-bottom: 5px solid #2ecc71;
     }
 }
