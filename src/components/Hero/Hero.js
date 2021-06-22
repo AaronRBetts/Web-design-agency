@@ -6,7 +6,7 @@ import $ from 'jquery'
 import carouselA from '../../images/ecommerce.svg'
 import carouselB from '../../images/portfolio.svg'
 import carouselC from '../../images/business.svg'
-import { FaGreaterThan, FaLessThan, FaMailBulk } from 'react-icons/fa'
+import { FaGreaterThan, FaMailBulk } from 'react-icons/fa'
 import HeroBg from '../../images/Hero_bg.svg'
 // import SectionHeader from '../Header/Header'
 
