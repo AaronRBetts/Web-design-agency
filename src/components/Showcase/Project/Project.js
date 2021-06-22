@@ -24,12 +24,12 @@ class Project extends React.Component {
                     <div className="project-info">
                         <div className="info-card card">
                             <p className="project-desc">{this.props.projectDesc} <hr /></p>
-                            <h3>Made using</h3>
+                            <h4>Made using</h4>
                             <div className="tools-info">
 
                                 {this.props.tools.map((tool, index) => 
                                     <div key={tool + index} className="tool">
-                                        <h4>{tool.name}</h4>
+                                        <h5>{tool.name}</h5>
                                         <a href={tool.siteLink}>{tool.icon}</a>
                                     </div>
                                 )}

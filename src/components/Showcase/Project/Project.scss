@@ -41,6 +41,21 @@
             }
         }
 
+        @media screen and (max-width: 768px) {
+            a {
+                margin: 0px;
+            }
+
+            h2 {
+                z-index: 999;
+                margin: 100px 10px 10px;
+                font-weight: 800;
+                font-size: 30px;
+            }
+
+            
+        }
+
     }
 
     .project-info {
@@ -53,7 +68,6 @@
         height: auto;
 
         .info-card{
-            margin: 50px;
             z-index: 2;
             display: flex;
             flex-direction: column;
@@ -62,8 +76,13 @@
             margin: auto;
             background: rgba(44, 62, 80,0.8);
 
+            h4 {
+                color: #e67e22;
+                margin: 0;
+            }
+            
             h5 {
-                margin: 10px;
+
             }
 
             .tools-info {
@@ -91,6 +110,13 @@
                             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
                             background: #2980b9;
                                          color: #ecf0f1;
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+                            background: #2980b9;
+                                         color: #ecf0f1;
+                            
                         }
                     }
                 }
@@ -128,7 +154,7 @@
         }
         
         @media screen and (max-width: 1024px) {
-            width: auto;
+            width: 100%;
             bottom: -50%;
         }
         
@@ -142,6 +168,11 @@
         .project-img {
             height: 100vh;
             transform: translate(-10%, -5%);
+
+            @media screen and (max-width: 768px) {
+                height: auto;
+                width: 100%;
+            }
         }
     }
 
@@ -156,7 +187,6 @@
 
     @media screen and (max-width: 1024px) {
         flex-direction: column;
-        justify-content: center;
 
         .project-display {
 
@@ -183,7 +213,7 @@
 
 #wrapper{
 	width:100%;
-	margin:50px auto;
+	margin:10px auto;
 	position:relative;
 	color:#fff;
 	text-shadow:rgba(0,0,0,0.1) 2px 2px 0px;	
@@ -288,15 +318,16 @@
 
 /*bar*/
 #pagination-wrap{
-	min-width:20px;
+    min-width: 50vh;
 	margin-left: auto; 
 	margin-right: auto;
-	height:100vh;
+	height:100%;
 	position:relative;
 	text-align:center;
 }
 
 #pagination-wrap ul {
+    height: 80vh;
 	width:100%;
 }
 
