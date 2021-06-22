@@ -85,16 +85,16 @@ class Hero extends React.Component {
                 <div id="title-section" className="card">
                     <h1>We're your Web Wizards</h1>
                     <div className="ctaWrapper">
-                        <Link className="primarybtn" to="contact"
-                                    smooth={true}
-                                    duration={500}
-                                    offset={-80}>
-                                <FaMailBulk /> <p>Contact</p></Link>
                         <Link className="secondarybtn" to="work"
                                     smooth={true}
                                     duration={500}
                                     offset={-80}>
                                 <FaMailBulk /> <p>Our work</p></Link>
+                        <Link className="primarybtn" to="contact"
+                                    smooth={true}
+                                    duration={500}
+                                    offset={-80}>
+                                <FaMailBulk /> <p>Contact</p></Link>
                     </div>
                 </div>
             </section>

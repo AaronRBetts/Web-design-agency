@@ -34,6 +34,7 @@
 }
 
 .contactContainer {
+    z-index: 997;
     justify-content: center;
     font-size: 1rem;
 
@@ -48,7 +49,7 @@
     }
     
     textarea {
-        z-index: 999;
+        z-index: 997;
         background-color: #bdc3c7;
         outline: none;
         padding: 5px;
