@@ -48,18 +48,19 @@
         top: 0;
         right: 0;
         display: flex;
-        margin: 20px;
+        margin: 50px;
         width: 30%;
         height: auto;
 
         .info-card{
-            margin: 20px;
+            margin: 50px;
             z-index: 2;
             display: flex;
             flex-direction: column;
             text-align: center;
             align-items: center;
             margin: auto;
+            background: rgba(44, 62, 80,0.8);
 
             h5 {
                 margin: 10px;
@@ -128,10 +129,7 @@
         
         @media screen and (max-width: 1024px) {
             width: auto;
-        }
-        
-        @media screen and (max-width: 500px) {
-            margin-top: -200px;
+            bottom: -50%;
         }
         
 
@@ -142,7 +140,7 @@
     
 
         .project-img {
-            width: 100vw;
+            height: 100vh;
             transform: translate(-10%, -5%);
         }
     }
