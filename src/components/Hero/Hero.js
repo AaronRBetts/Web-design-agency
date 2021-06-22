@@ -61,9 +61,10 @@ class Hero extends React.Component {
                 <img id="hero-bg" alt="Hero background" src={HeroBg}/>
                 <div id="showcaseWrapper">
                     <div id="showcase">
-                    <button className="slide" id="prev"><FaLessThan className="card" /></button>
+                    {/* <button className="slide" id="prev"><FaLessThan className="card" /></button> */}
                     <div className="container">
-                        <div className="carousel">
+                    <button className="slide" id="next"><FaGreaterThan className="card" /></button>
+                    <div className="carousel">
                             <div id="carousel-ecom">
                                 <img className="carousel-img" alt="carousel ecommerce" src={carouselA} />
                                 <h2>E-commerce</h2>
@@ -74,22 +75,27 @@ class Hero extends React.Component {
                             </div>
                             <div id="carousel-brand">
                                 <img className="carousel-img" alt="carousel business" src={carouselC} />
-                                <h2>Business</h2>
+                                <h2>Brochure</h2>
                             </div>
                         </div>
                     </div>
-                    <button className="slide" id="next"><FaGreaterThan className="card" /></button>
                     </div>
                 </div>
                 {/* <img id="hero-image" src={HeroImage}/> */}
                 <div id="title-section" className="card">
                     <h1>We're your Web Wizards</h1>
-                    <h3>Like the site? We'll make you one.</h3>
-                    <Link to="contact"
-                                smooth={true}
-                                duration={500}
-                                offset={-80}>
-                                    <FaMailBulk /> <p>Contact</p></Link>
+                    <div className="ctaWrapper">
+                        <Link className="primarybtn" to="contact"
+                                    smooth={true}
+                                    duration={500}
+                                    offset={-80}>
+                                <FaMailBulk /> <p>Contact</p></Link>
+                        <Link className="secondarybtn" to="work"
+                                    smooth={true}
+                                    duration={500}
+                                    offset={-80}>
+                                <FaMailBulk /> <p>Our work</p></Link>
+                    </div>
                 </div>
             </section>
         )

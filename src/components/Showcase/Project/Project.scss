@@ -10,7 +10,7 @@
             z-index: 999;
             margin: 10px 30px;
             font-weight: 800;
-            font-size: 48px;
+            font-size: 80px;
         }
 
         // a {
@@ -44,9 +44,12 @@
     }
 
     .project-info {
+        position: absolute;
+        top: 0;
+        right: 0;
         display: flex;
-        margin: 20px auto auto;
-        width: 40%;
+        margin: 20px;
+        width: 30%;
         height: auto;
 
         .info-card{
@@ -111,11 +114,11 @@
             h3 {
                 margin: 0;
                 font-weight: 600;
-                font-size: 36px;
+                font-size: 24px;
             }
 
             p {
-                font-size: 24px;
+                font-size: 18px;
                 font-weight: 500;
                 padding: 20px;
                 padding-bottom: 0;
@@ -135,17 +138,12 @@
     }
 
     .project-display {
-        z-index: 1;
         overflow: visible;
-        width: 50%;
-        
-        @media screen and (max-width: 1024px) {
-            width: 100%;
-        }
+    
 
         .project-img {
-            z-index: 1;
-            transform: translate(-10%, 0) scale(1.2);
+            width: 100vw;
+            transform: translate(-10%, -5%);
         }
     }
 
@@ -177,7 +175,6 @@
 
 
             .project-info {
-                width: auto;
             }
         }
     }

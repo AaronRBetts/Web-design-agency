@@ -1,24 +1,28 @@
 #hero {
-    padding-top: 80px;
+    height: 100vh;
     margin: 0 auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     overflow: visible;
+    background-color: #ecf0f1;
 
     #hero-bg {
+        display: none;
         z-index: -1;
         position: absolute;
         width: auto;
-        overflow: visible;
+        overflow: hidden;
     }
 
     #showcaseWrapper{
+        height: 100%;
+        background-color: #34495e;
+        width: 50%;
         margin: auto;
         display: inline;
         overflow: visible;
-        width: fit-content;
 
         .heading{
             text-align: center;
@@ -27,6 +31,9 @@
     }
     
     #showcase{
+        height: 100%;
+        justify-content: center;
+        align-items: center;
         margin: auto;
         display: flex;
         overflow: visible;
@@ -38,6 +45,9 @@
     }
 
     .slide {
+        position: absolute;
+        right: 0;
+        bottom: -200px;
         border: 0px solid #000;
         // margin-top: 80px;
         // height: 500px;
@@ -71,19 +81,25 @@
 }
 
 #title-section {
-    width: 100%;
-    margin: auto;
-    padding: 20px;
+    color: #2c3e50;
+    width: 50%;
+    height: 100%;
     
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: end;
     transition: 0.2s all ease;
+
+    .ctaWrapper {
+        display: flex;
+        margin: auto;
+    }
     
 
     h1 {
         margin: 0;
+        margin-top: auto;
         font-size: 6rem;
         text-decoration: underline;
         text-decoration-thickness: 10px;
@@ -105,9 +121,14 @@
         line-height: 22px;
     }
 
+    .primarybtn {
+        background-color: #8e44ad;
+        color: #ecf0f1;
+    }
+
     a {
+        margin: 10px;
         font-size: xx-large;
-        color: #ecf0f1;;
         width: 200px;
         display: flex;
         justify-content: space-evenly;
@@ -140,37 +161,36 @@
 }
 
 .container {
-    margin: 80px 120px;
-    width: 300px;
-    height: 200px;
+    margin: 10px;
+    width: 40vw;
+    height: 500px;
     position: relative;
-    perspective: 1000px;
+    perspective: 1500px;
 
     .carousel {
         height: 100%;
         width: 100%;
         position: absolute;
         transform-style: preserve-3d;
-        transition: transform 1s ease-in-out;
+        transition: transform 1s ease;
 
         #carousel-ecom {
-            transform: rotateY(0deg) translateZ(150px);
+            transform: rotateY(0deg) translateZ(240px);
         }
 
         #carousel-portfolio {
-            transform: rotateY(120deg) translateZ(150px);
+            transform: rotateY(120deg) translateZ(240px);
         }
 
         #carousel-brand {
-            transform: rotateY(240deg) translateZ(150px);
+            transform: rotateY(240deg) translateZ(240px);
         }
 
         > div {
             display: block;
             position: absolute;
-            width: 300px;
-            height: 200px;
-            font-size: 1rem;
+            width: 100%;
+            height: 500px;
             text-align: center;
             color: #000;
             background:rgba(0, 0, 0, 0.8);
@@ -178,10 +198,9 @@
             transition: transform 0.1s ease;
 
             h2 {
-                font-size: 2rem;
+                font-size: 3rem;
                 margin: 0;
                 color: #ecf0f1;;
-                background:rgba(0, 0, 0, 0.8);
                 border-radius: 5px;
                 text-decoration: underline;
                 text-decoration-thickness: 5px;
