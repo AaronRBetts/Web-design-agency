@@ -22,7 +22,7 @@ class Project extends React.Component {
                         <img className="project-img" alt={this.props.projectName} src={this.props.projectImg} />
                     </div>
                     <div className="project-info">
-                        <div className="info-card card">
+                        <div className="info-card">
                             <p className="project-desc">{this.props.projectDesc} <hr /></p>
                             <h4>Made using</h4>
                             <div className="tools-info">
