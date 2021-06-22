@@ -5,7 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    overflow: visible;
+    overflow: hidden;
     background-color: #ecf0f1;
 
     #hero-bg {
@@ -17,8 +17,8 @@
     }
 
     #showcaseWrapper{
+        background-color: #8e44ad;
         height: 100%;
-        background-color: #34495e;
         width: 50%;
         margin: auto;
         display: inline;
@@ -47,7 +47,7 @@
     .slide {
         position: absolute;
         right: 0;
-        bottom: -200px;
+        bottom: 0;
         border: 0px solid #000;
         // margin-top: 80px;
         // height: 500px;
@@ -98,6 +98,7 @@
     
 
     h1 {
+        z-index: 1;
         margin: 0;
         margin-top: auto;
         font-size: 6rem;
@@ -127,6 +128,7 @@
     }
 
     a {
+        z-index: 1;
         margin: 10px;
         font-size: xx-large;
         width: 200px;
@@ -156,6 +158,20 @@
     }
 
     @media screen and (max-width: 1024px) {
+        a {
+            margin: 10px;
+            font-size: large;
+            width: 120px;
+        }
+        
+    }
+
+    @media screen and (max-width: 768px) {
+        a {
+            margin: 5px;
+            font-size: small;
+            width: 100px;
+        }
         
     }
 }
@@ -163,11 +179,12 @@
 .container {
     margin: 10px;
     width: 40vw;
-    height: 500px;
+    height: 100vh;
     position: relative;
-    perspective: 1500px;
+    perspective: 900px;
 
     .carousel {
+        margin: auto;
         height: 100%;
         width: 100%;
         position: absolute;
@@ -175,29 +192,30 @@
         transition: transform 1s ease;
 
         #carousel-ecom {
-            transform: rotateY(0deg) translateZ(240px);
+            transform: rotateY(0deg) translateZ(190px);
         }
 
         #carousel-portfolio {
-            transform: rotateY(120deg) translateZ(240px);
+            transform: rotateY(120deg) translateZ(190px);
         }
 
         #carousel-brand {
-            transform: rotateY(240deg) translateZ(240px);
+            transform: rotateY(240deg) translateZ(190px);
         }
 
         > div {
             display: block;
             position: absolute;
             width: 100%;
-            height: 500px;
+            height: 100%;
             text-align: center;
+            background-color: #8e44ad;
             color: #000;
-            background:rgba(0, 0, 0, 0.8);
             border-radius: 10px;
             transition: transform 0.1s ease;
 
             h2 {
+                margin-top: 25%;
                 font-size: 3rem;
                 margin: 0;
                 color: #ecf0f1;;
@@ -208,7 +226,9 @@
             }
 
             img {
-                height: 100%;
+                max-width: 100%;
+                margin-top: 25%;
+                height: 50%;
                 overflow: hidden;
             }
         }
@@ -216,61 +236,88 @@
     }
 
     @media screen and (max-width: 1024px) {
-        width: 250px;
-        height: 175px;
-        margin: auto;
+        perspective: 500px;
 
-        .carousel {
-
-            > div {
-                width: 250px;
-                height: 175px;
-
-                h2 {
-                    font-size: 1rem;
-                }
-            }
-    
-            #carousel-ecom {
-                transform: rotateY(0deg) translateZ(100px);
-            }
-    
-            #carousel-portfolio {
-                transform: rotateY(120deg) translateZ(100px);
-            }
-    
-            #carousel-brand {
-                transform: rotateY(240deg) translateZ(100px);
-            }
-
+        #carousel-ecom {
+            transform: rotateY(0deg) translateZ(120px) !important;
         }
+
+        #carousel-portfolio {
+            transform: rotateY(120deg) translateZ(120px) !important;
+        }
+
+        #carousel-brand {
+            transform: rotateY(240deg) translateZ(120px) !important;
+        }
+
+        img {
+            margin-top: 25vh;
+            width: 100%;
+            height: auto;
+        }
+
+        h2 {
+            font-size: 2rem !important;
+        }
+        
     }
 
-    @media screen and (max-width: 768px) {
-        width: 200px;
-        height: 150px;
-        margin: auto;
+    // @media screen and (max-width: 1024px) {
+    //     width: 250px;
+    //     height: 175px;
+    //     margin: auto;
 
-        .carousel {
+    //     .carousel {
 
-            > div {
-                width: 200px;
-                height: 150px;
-            }
-    
-            #carousel-ecom {
-                transform: rotateY(0deg) translateZ(75px);
-            }
-    
-            #carousel-portfolio {
-                transform: rotateY(120deg) translateZ(75px);
-            }
-    
-            #carousel-brand {
-                transform: rotateY(240deg) translateZ(75px);
-            }
+    //         > div {
+    //             width: 250px;
+    //             height: 175px;
 
-        }
-    }
+    //             h2 {
+    //                 font-size: 1rem;
+    //             }
+    //         }
+    
+    //         #carousel-ecom {
+    //             transform: rotateY(0deg) translateZ(100px);
+    //         }
+    
+    //         #carousel-portfolio {
+    //             transform: rotateY(120deg) translateZ(100px);
+    //         }
+    
+    //         #carousel-brand {
+    //             transform: rotateY(240deg) translateZ(100px);
+    //         }
+
+    //     }
+    // }
+
+    // @media screen and (max-width: 768px) {
+    //     width: 200px;
+    //     height: 150px;
+    //     margin: auto;
+
+    //     .carousel {
+
+    //         > div {
+    //             width: 200px;
+    //             height: 150px;
+    //         }
+    
+    //         #carousel-ecom {
+    //             transform: rotateY(0deg) translateZ(75px);
+    //         }
+    
+    //         #carousel-portfolio {
+    //             transform: rotateY(120deg) translateZ(75px);
+    //         }
+    
+    //         #carousel-brand {
+    //             transform: rotateY(240deg) translateZ(75px);
+    //         }
+
+    //     }
+    // }
 
 }

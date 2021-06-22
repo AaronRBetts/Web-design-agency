@@ -9,11 +9,15 @@
     h1 {
         text-align: center;
     }
+
+    @media screen and (max-width: 768px) {
+        padding: 10px;
+        
+    }
 }
 
 #contact-bg {
     height: 100%;
-    z-index: -2;
     position: absolute;
     left: 0;
     overflow: hidden;
@@ -31,8 +35,7 @@
 
 .contactContainer {
     justify-content: center;
-    font-size: 1.5rem;
-    padding: 20px !important;
+    font-size: 1rem;
 
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -45,17 +48,21 @@
     }
     
     textarea {
+        z-index: 999;
+        background-color: #bdc3c7;
         outline: none;
         padding: 5px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         width: 700px;
-        min-width: 200px;
         border: none;
         margin: 0px 0 10px;
         font-size: 1.5rem;
         resize: none;
+        transition: all 0.1s ease;
 
-        &:active {
+        &:focus {
+            background-color: #ecf0f1;
+            box-shadow: none;
             border: none;
             outline: none;
         }
@@ -63,11 +70,11 @@
 
     @media screen and (max-width: 1024px) {
         width: 100%;
-        min-width: none;
         grid-template-columns: 1fr;
         justify-items: center;
 
         textarea {
+            font-size: 12px;
             width: 80%;
         }
 
@@ -78,7 +85,6 @@
 
     @media screen and (max-width: 768px) {
         width: 100%;
-        min-width: none;
         grid-template-columns: 1fr;    
 
 

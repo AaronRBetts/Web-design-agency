@@ -210,8 +210,8 @@ render() {
                     </ul>
                 </div>
         
-                <div class="btns" id="next"><FaGreaterThan /></div>
-                <div class="btns" id="previous"><FaLessThan /></div>
+                <div className="btns" id="next"><FaGreaterThan /></div>
+                <div className="btns" id="previous"><FaLessThan /></div>
                 <div id="counter"></div>
                 
                 <div id="pagination-wrap">
