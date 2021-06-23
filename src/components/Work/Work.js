@@ -49,7 +49,7 @@ function Work() {
                       <div className="ProjectDisplay">
                           <img className="ProjectImg" alt="Malmaks Water Shop" src={DiatarratImg} />
                       </div>
-                      <div className="ProjectInfo card">
+                      <div className="ProjectInfo">
                           <div className="InfoCard">
                               <p className="ProjectDesc">An e-commerce store for a sticker manufacturer and retailer. Diatarrat specialise in custom stickers designed to fit all modern blood glucose measurement devices. Diatarrat are a large e-commerce store containing over 1000 individual products across many devices and design categories. <hr /></p>
                               <h4>Made using</h4>
@@ -106,7 +106,7 @@ function Work() {
                     <div className="ProjectDisplay">
                         <img className="ProjectImg" alt="Malmaks Water Shop" src={MalmaksImg} />
                     </div>
-                    <div className="ProjectInfo card">
+                    <div className="ProjectInfo">
                         <div className="InfoCard">
                             <p className="ProjectDesc">A water supples and service e-commerce site. This site makes use of a theme that represents professionalism, simplicity, quality, and the blue matches their industry! <hr /></p>
                             <h4>Made using</h4>
@@ -166,7 +166,7 @@ function Work() {
                       <div className="ProjectDisplay">
                           <img className="ProjectImg" alt="AaronRBetts.github.io" src={AaronImg} />
                       </div>
-                      <div className="ProjectInfo card">
+                      <div className="ProjectInfo">
                           <div className="InfoCard">
                               <p className="ProjectDesc">Our lead developers personal developer portfolio. This portfolio has a subtle yet eye-catching design, allowing the reader to focus on the content. The main features include a responsive, user friendly navigation as well as modern project showcases <hr /></p>
                               <h4>Made using</h4>
@@ -227,7 +227,7 @@ function Work() {
                       <div className="ProjectDisplay">
                           <img className="ProjectImg" alt="Malmaks Water Shop" src={MukamatImg} />
                       </div>
-                      <div className="ProjectInfo card">
+                      <div className="ProjectInfo">
                           <div className="InfoCard">
                               <p className="ProjectDesc">An e-commerce store for an educational material illustrator and supplier. The focus of this site was to and online payment options, and give the site a fresh redesign while keeping page structure and the original colors. <hr /></p>
                               <h4>Made using</h4>
