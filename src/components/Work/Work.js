@@ -9,7 +9,7 @@ import MukamatImg from '../../images/mukamat_alt.png'
 import { FaFigma, FaWordpressSimple, FaBootstrap, FaSass, FaShopify } from 'react-icons/fa'
 import { SiJquery } from 'react-icons/si'
 
-const Work = () => {
+function Work() {
 
   const {
     carouselFragment,
@@ -172,12 +172,16 @@ const Work = () => {
                               <h4>Made using</h4>
                               <div className="ToolsInfo">
                                   <div className="tool">
-                                      <h5>Shopify</h5>
-                                      <a href="https://shopify.com/"><FaShopify /></a>
+                                      <h5>Sass</h5>
+                                      <a href="https://sass-lang.com/"><FaSass /></a>
                                   </div>
                                   <div className="tool">
-                                      <h5>Figma</h5>
-                                      <a href="https://figma.com/"><FaFigma /></a>
+                                      <h5>Bootstrap</h5>
+                                      <a href="https://getbootstrap.com/"><FaBootstrap /></a>
+                                  </div>
+                                  <div className="tool">
+                                      <h5>jQuery</h5>
+                                      <a href="https://jquery.com/"><SiJquery /></a>
                                   </div>
                               </div>
                           </div>

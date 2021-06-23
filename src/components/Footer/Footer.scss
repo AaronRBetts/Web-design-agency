@@ -4,6 +4,12 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     
+    .FooterLogo {
+        margin: 20px;
+        display: flex;
+        flex-wrap: no-wrap;
+    }
+
     a {
         text-decoration: none;
         color: #ecf0f1;

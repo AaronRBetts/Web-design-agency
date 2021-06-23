@@ -1,11 +1,15 @@
 import React from 'react'
 import './Footer.scss'
+import Logo from '../../images/WGLogo.svg'
 import { FaGithub, FaFigma, FaCodepen, FaPhone, FaMailBulk, FaMapMarked  } from "react-icons/fa";
 
 const Footer = () => {
     return (
         <div className="footer card">
-            <h1>Web Geeks</h1>
+            <div className="FooterLogo">
+                <img src={Logo} alt="Web Geeks Logo"/>
+                <h1>Web Geeks</h1>
+            </div>
             <div className="footer-links">
                 <a href="http://github.com/AaronRBetts" id="github">
                     <p><FaGithub /> Github</p>

@@ -3,9 +3,8 @@
     margin: 0 auto;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     justify-content: space-between;
-    overflow: hidden;
     background-color: #ecf0f1;
 
     #hero-bg {
@@ -13,13 +12,12 @@
         z-index: -1;
         position: absolute;
         width: auto;
-        overflow: hidden;
     }
 
     #showcaseWrapper{
         background: linear-gradient(135deg, rgb(52, 152, 219) 0%, rgb(155, 89, 182) 50%);
         height: 100%;
-        width: 50%;
+        width: 100%;
         margin: auto;
         display: inline;
         overflow: hidden;
@@ -31,6 +29,11 @@
     }
     
     #showcase{
+
+        @media screen and (max-width: 768px) {
+            display: none;
+            
+        }
         height: 100%;
         justify-content: center;
         align-items: center;
@@ -48,6 +51,11 @@
         position: absolute;
         right: 0;
         bottom: 0;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+            
+        }
     }
 }
 
@@ -62,6 +70,23 @@
     justify-content: center;
     text-align: end;
     transition: 0.2s all ease;
+
+    img {
+        position: absolute;
+        right: 25vw;
+        transition: all 0.2s ease;
+
+        &:hover {
+            transform: translateY(5px) scale(1.05);
+        }
+
+        @media screen and (max-width: 768px) {
+            display: none;            
+        }
+    }
+
+    h1 {
+    }
 
     .ctaWrapper {
         display: flex;
@@ -93,7 +118,8 @@
             cursor: pointer;
     
             p {
-                margin: 0 0 0 20px;
+                font-size: 0.8em;
+                margin: 0 0 0 10px;
             }
         }
     }
@@ -103,7 +129,8 @@
         z-index: 1;
         margin: 0;
         margin-top: auto;
-        font-size: 4em;
+        margin-bottom: 0.5em;
+        font-size: 3em;
         text-decoration: underline;
         text-decoration-thickness: 10px;
         text-decoration-color: #2ecc71;
@@ -194,7 +221,7 @@
             transition: transform 0.1s ease;
 
             h2 {
-                font-size: 2em;
+                font-size: 1em;
                 color: #ecf0f1;;
                 border-radius: 5px;
                 text-decoration: underline;

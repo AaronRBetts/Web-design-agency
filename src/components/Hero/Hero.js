@@ -8,6 +8,7 @@ import carouselB from '../../images/portfolio.svg'
 import carouselC from '../../images/business.svg'
 import { FaGreaterThan, FaMailBulk, FaRegArrowAltCircleDown } from 'react-icons/fa'
 import HeroBg from '../../images/Hero_bg.svg'
+import Arrow from '../../images/Arrow.png'
 // import SectionHeader from '../Header/Header'
 
 class Hero extends React.Component {
@@ -58,7 +59,7 @@ class Hero extends React.Component {
       render() {
         return (
             <section id="hero">
-            <button className="slide" id="next"><FaGreaterThan className="card" /></button>
+            {/* <button className="slide">How can we help?<FaGreaterThan className="card" /></button> */}
                 <img id="hero-bg" alt="Hero background" src={HeroBg}/>
                 <div id="showcaseWrapper">
                     <div id="showcase">
@@ -83,7 +84,11 @@ class Hero extends React.Component {
                 </div>
                 {/* <img id="hero-image" src={HeroImage}/> */}
                 <div id="title-section" className="card">
-                    <h1>We're your Web Wizards</h1>
+                    <h1>Need a website?</h1>
+                    <div>
+                        <h2>We design, develop, deploy and maintain...</h2>
+                        <img src={Arrow} id="next" alt="arrow"/>
+                    </div>
                     <div className="ctaWrapper">
                         <Link className="secondarybtn" to="work"
                                     smooth={true}
@@ -94,7 +99,7 @@ class Hero extends React.Component {
                                     smooth={true}
                                     duration={500}
                                     offset={-80}>
-                                <FaMailBulk /> <p>Contact</p></Link>
+                                <FaMailBulk /> <p>Work with us</p></Link>
                     </div>
                 </div>
             </section>
