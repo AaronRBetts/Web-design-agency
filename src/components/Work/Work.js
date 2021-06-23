@@ -217,8 +217,8 @@ const Work = () => {
                 <div className="CarouselSlide" background="#2c3e50">
                   <div className="MalmaksDisplay">
                       <div className="ProjectHeader">
-                          <h2>Malmaks Water Shop</h2>
-                          <a className="ProjectLink"href={`https://Malmakswatershop.co.nz`}>Malmakswatershop.co.nz</a>
+                          <h2>Mukamat Oy</h2>
+                          <a className="ProjectLink"href={`https://Mukamat.fi`}>Mukamat.fi</a>
                       </div>
                       <div className="ProjectDisplay">
                           <img className="ProjectImg" alt="Malmaks Water Shop" src={MukamatImg} />
@@ -257,7 +257,7 @@ const Work = () => {
 
   return (
       <section className="Work" id="work">
-      <SectionHeader title={"About us"} subTitle={"Who we are and what we do"} />
+      <SectionHeader title={"Our work"} subTitle={"Check out some of our featured projects"} />
         <div className="WorkContainer">
             <div className="CarouselWrapper">
             <div className="sliderBtn" id="prev"

@@ -1,4 +1,11 @@
 .Work {
+    overflow: visible;
+
+    .WorkContainer {
+        box-shadow:
+                    10px 10px 30px rgba(0, 0, 0, 0.3);
+
+    }
 
     .CarouselSlide{
 
@@ -33,14 +40,15 @@
                 display: flex;
     
                 .ProjectImg{
-                    width: 100%;
+                    transform: scale(1.1);
                     z-index: -1;
+                    height: 70vh;
                 }
             }
 
             .ProjectInfo {
                 position: absolute;
-                top: 70%;
+                bottom: 0;
                 display: flex;
 
                 .InfoCard {
@@ -50,7 +58,7 @@
 
                     }
                     h4 {
-
+                        margin-bottom: 0;
                     }
 
                     .ToolsInfo {
@@ -60,7 +68,8 @@
 
                         .tool {
                             padding: 10px;
-                            h4 {
+                            h5 {
+                                text-align: center;
                                 margin: 5px;
                             }
         
@@ -106,8 +115,8 @@
 
                 .CarouselSlide {
                     font-size: 1.5em;
-                    color: #9b59b6;
-                    background: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 100%);
+                    color: #ecf0f1;
+                    background: #8e44ad;
                     border: 3px #34495e solid;
                     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
                     border-radius: 0 0 15px 15px;
