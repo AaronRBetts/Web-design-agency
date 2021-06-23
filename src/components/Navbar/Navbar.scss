@@ -1,6 +1,8 @@
 .nav-container {
     position: fixed;
-    width: 100%;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    width: 70vw;
     height: 80px;
     left: 0px;
     top: 0px;
@@ -8,7 +10,7 @@
     0px 0px 20px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     z-index: 998;
     cursor: pointer;

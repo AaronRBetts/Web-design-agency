@@ -6,7 +6,7 @@ class SectionHeader extends React.Component {
         return (
             <div className="header">
                 <h3>{this.props.title} </h3>
-                <h2>{this.props.subTitle}</h2>
+                <h4>{this.props.subTitle}</h4>
                 {this.props.hr ? <hr /> : ""}
             </div>
         )

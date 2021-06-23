@@ -46,43 +46,15 @@
 
     .slide {
         position: absolute;
-        right: 0;
+        left: 15vw;
         bottom: 0;
-        border: 0px solid #000;
-        // margin-top: 80px;
-        // height: 500px;
-        background: none;
-        color: rgba(0,0,0, 0.6);
-        font-size: 50px;
-        align-items: center;
-        z-index: 997;
-    
-        svg{
-            box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.2),
-                        10px 10px 20px rgba(0, 0, 0, 0.4);
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
-            transition: all 0.2s ease;
-            border-radius: 50%;
-            padding: 10px;
-            &:hover {
-                box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.2),
-                            5px 5px 5px rgba(0, 0, 0, 0.4);
-            }
-        }
-
-        @media screen and (max-width: 1024px) {
-            font-size: 50px;
-        }
-
-        @media screen and (max-width: 1024px) {
-            font-size: 30px;
-        }
     }
 }
 
 #title-section {
+    padding-right: 15vw;
     color: #2c3e50;
-    width: 50%;
+    width: 34vw;
     height: 100%;
     
     display: flex;
@@ -93,7 +65,37 @@
 
     .ctaWrapper {
         display: flex;
-        margin: auto;
+        margin: 20px 0;
+        width: 100%;
+        justify-content: flex-end;
+
+        a {
+            height: fit-content;
+            padding: 0.2em 1em;
+            z-index: 1;
+            margin: 0;
+            margin-left: 20px;
+            font-size: 1em;
+            display: flex;
+            justify-content: space-evenly;
+            
+            
+            box-shadow: -3px -3px 10px #ffffff4d, 
+            3px 3px 10px #0000004d;
+            // background: linear-gradient(135deg,rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+            border-radius: 5px;
+            transition: all 0.2s ease;
+    
+                &:hover {
+                    box-shadow: none;
+                }
+            padding: 5px 10px;
+            cursor: pointer;
+    
+            p {
+                margin: 0 0 0 20px;
+            }
+        }
     }
     
 
@@ -101,7 +103,7 @@
         z-index: 1;
         margin: 0;
         margin-top: auto;
-        font-size: 6rem;
+        font-size: 4em;
         text-decoration: underline;
         text-decoration-thickness: 10px;
         text-decoration-color: #2ecc71;
@@ -125,32 +127,6 @@
     .primarybtn {
         background-color: #8e44ad;
         color: #ecf0f1;
-    }
-
-    a {
-        z-index: 1;
-        margin: 10px;
-        font-size: xx-large;
-        width: 200px;
-        display: flex;
-        justify-content: space-evenly;
-        
-        
-        box-shadow: -3px -3px 10px #ffffff4d, 
-        3px 3px 10px #0000004d;
-        // background: linear-gradient(135deg,rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
-        border-radius: 5px;
-        transition: all 0.2s ease;
-
-            &:hover {
-                box-shadow: none;
-            }
-        padding: 10px;
-        cursor: pointer;
-
-        p {
-            margin: 0;
-        }
     }
 
     .scroll-btn {
@@ -177,7 +153,6 @@
 }
 
 .container {
-    margin: 10px;
     width: 40vw;
     height: 100vh;
     position: relative;
@@ -219,7 +194,7 @@
             transition: transform 0.1s ease;
 
             h2 {
-                font-size: 3rem;
+                font-size: 2em;
                 color: #ecf0f1;;
                 border-radius: 5px;
                 text-decoration: underline;

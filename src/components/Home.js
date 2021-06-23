@@ -3,10 +3,11 @@ import Navbar from './Navbar/Navbar'
 import Hero from './Hero/Hero'
 import Sidebar from './Sidebar/Sidebar'
 import About from './About/About'
-import Showcase from './Showcase/Showcase'
+// import Showcase from './Showcase/Showcase'
 // import Process from './Process/Process'
 import Contact from './Contact/Contact'
 import Footer from './Footer/Footer'
+import Work from './Work/Work'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,8 @@ const Home = () => {
             <Navbar toggle={toggle} />
             <Hero />
             <About />
-            <Showcase />
+            <Work />
+            {/* <Showcase /> */}
             {/* <Process /> */}
             <Contact />
             <Footer />

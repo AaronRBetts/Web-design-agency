@@ -1,8 +1,10 @@
 #contact {
+    margin: 50px 15vw 50px 15vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
     z-index: 999;
     display: flex;
     flex-wrap: wrap;
-    padding: 50px;
     overflow: hidden;
     justify-content: center;
     
@@ -13,6 +15,10 @@
     @media screen and (max-width: 768px) {
         padding: 10px;
         
+    }
+
+    .card {
+        z-index: 100;
     }
 }
 
@@ -39,7 +45,7 @@
     font-size: 1rem;
 
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 100px 1fr;
 
 
     label {

@@ -58,24 +58,24 @@ class Hero extends React.Component {
       render() {
         return (
             <section id="hero">
+            <button className="slide" id="next"><FaGreaterThan className="card" /></button>
                 <img id="hero-bg" alt="Hero background" src={HeroBg}/>
                 <div id="showcaseWrapper">
                     <div id="showcase">
                     {/* <button className="slide" id="prev"><FaLessThan className="card" /></button> */}
                     <div className="container">
-                    <button className="slide" id="next"><FaGreaterThan className="card" /></button>
                     <div className="carousel">
                             <div id="carousel-ecom">
                                 <img className="carousel-img" alt="carousel ecommerce" src={carouselA} />
-                                <h2>E-commerce</h2>
+                                <h2>E-commerce stores</h2>
                             </div>
                             <div id="carousel-portfolio">
                                 <img className="carousel-img" alt="carousel portfolio" src={carouselB} />
-                                <h2>Portfolio</h2>
+                                <h2>Creative portfolios</h2>
                             </div>
                             <div id="carousel-brand">
                                 <img className="carousel-img" alt="carousel business" src={carouselC} />
-                                <h2>Brochure</h2>
+                                <h2>Brochure displays</h2>
                             </div>
                         </div>
                     </div>

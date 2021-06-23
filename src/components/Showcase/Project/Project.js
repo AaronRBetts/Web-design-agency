@@ -1,5 +1,5 @@
 import React from 'react'
-import './Project.scss'
+// import './Project.scss'
 
 class Project extends React.Component {
 
@@ -11,7 +11,6 @@ class Project extends React.Component {
         
         return (
 
-          	 <li data-color="#1abc9c" className="project">
                 <div>
                     <div className="project-header">
                         <h2>{this.props.projectName}</h2>
@@ -37,7 +36,6 @@ class Project extends React.Component {
                         </div>
                     </div>
                 </div>
-             </li>
         )
     }
 }
