@@ -6,7 +6,7 @@ import $ from 'jquery'
 import carouselA from '../../images/ecommerce.svg'
 import carouselB from '../../images/portfolio.svg'
 import carouselC from '../../images/business.svg'
-import { FaGreaterThan, FaMailBulk } from 'react-icons/fa'
+import { FaGreaterThan, FaMailBulk, FaRegArrowAltCircleDown } from 'react-icons/fa'
 import HeroBg from '../../images/Hero_bg.svg'
 // import SectionHeader from '../Header/Header'
 
@@ -89,7 +89,7 @@ class Hero extends React.Component {
                                     smooth={true}
                                     duration={500}
                                     offset={-80}>
-                                <FaMailBulk /> <p>Our work</p></Link>
+                                <FaRegArrowAltCircleDown /> <p>Our work</p></Link>
                         <Link className="primarybtn" to="contact"
                                     smooth={true}
                                     duration={500}

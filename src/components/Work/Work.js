@@ -160,15 +160,15 @@ const Work = () => {
                 <div className="CarouselSlide" background="#2c3e50">
                   <div className="MalmaksDisplay">
                       <div className="ProjectHeader">
-                          <h2>Malmaks Water Shop</h2>
-                          <a className="ProjectLink"href={`https://Malmakswatershop.co.nz`}>Malmakswatershop.co.nz</a>
+                          <h2>Aaron Betts</h2>
+                          <a className="ProjectLink"href={`https://AaronRBetts.github.io`}>AaronRBetts.github.io</a>
                       </div>
                       <div className="ProjectDisplay">
-                          <img className="ProjectImg" alt="Malmaks Water Shop" src={AaronImg} />
+                          <img className="ProjectImg" alt="AaronRBetts.github.io" src={AaronImg} />
                       </div>
                       <div className="ProjectInfo card">
                           <div className="InfoCard">
-                              <p className="ProjectDesc">A water supples and service e-commerce site. This site makes use of a theme that represents professionalism, simplicity, quality, and the blue matches their industry! <hr /></p>
+                              <p className="ProjectDesc">Our lead developers personal developer portfolio. This portfolio has a subtle yet eye-catching design, allowing the reader to focus on the content. The main features include a responsive, user friendly navigation as well as modern project showcases <hr /></p>
                               <h4>Made using</h4>
                               <div className="ToolsInfo">
                                   <div className="tool">
@@ -225,7 +225,7 @@ const Work = () => {
                       </div>
                       <div className="ProjectInfo card">
                           <div className="InfoCard">
-                              <p className="ProjectDesc">A water supples and service e-commerce site. This site makes use of a theme that represents professionalism, simplicity, quality, and the blue matches their industry! <hr /></p>
+                              <p className="ProjectDesc">An e-commerce store for an educational material illustrator and supplier. The focus of this site was to and online payment options, and give the site a fresh redesign while keeping page structure and the original colors. <hr /></p>
                               <h4>Made using</h4>
                               <div className="ToolsInfo">
                                   <div className="tool">

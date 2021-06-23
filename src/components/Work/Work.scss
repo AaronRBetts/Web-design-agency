@@ -8,15 +8,19 @@
     }
 
     .CarouselSlide{
+        width: 100%;
 
         > div {
             display: flex;
             flex-wrap: wrap;
 
             .ProjectHeader{
+                position: absolute;
+                padding: 10px;
 
                 h2 {
-
+                    font-size: 3em;
+                    margin: 0 0 10px;
                 }
 
                 .ProjectLink {
@@ -37,6 +41,8 @@
             }
 
             .ProjectDisplay{
+                margin-left: auto;
+                
                 display: flex;
     
                 .ProjectImg{
@@ -62,12 +68,12 @@
                     }
 
                     .ToolsInfo {
-                        width: 100%;
+                        width: 50%;
                         display: flex;
                         justify-content: space-evenly;
 
                         .tool {
-                            padding: 10px;
+                            padding: 5px;
                             h5 {
                                 text-align: center;
                                 margin: 5px;
@@ -76,7 +82,7 @@
                             svg {
                                 color: #e67e22;
                                 overflow: visible;
-                                font-size: 48px;
+                                font-size: 2em;
                                 transition: all 0.2s ease;
                                 padding: 10px;
                                 cursor: pointer;
