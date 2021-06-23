@@ -64,22 +64,22 @@ class Hero extends React.Component {
                 <div id="showcaseWrapper">
                     <div id="showcase">
                     {/* <button className="slide" id="prev"><FaLessThan className="card" /></button> */}
-                    <div className="container">
-                    <div className="carousel">
-                            <div id="carousel-ecom">
-                                <img className="carousel-img" alt="carousel ecommerce" src={carouselA} />
-                                <h2>E-commerce stores</h2>
-                            </div>
-                            <div id="carousel-portfolio">
-                                <img className="carousel-img" alt="carousel portfolio" src={carouselB} />
-                                <h2>Creative portfolios</h2>
-                            </div>
-                            <div id="carousel-brand">
-                                <img className="carousel-img" alt="carousel business" src={carouselC} />
-                                <h2>Brochure displays</h2>
+                        <div className="container">
+                            <div className="carousel">
+                                <div id="carousel-ecom">
+                                    <img className="carousel-img" alt="carousel ecommerce" src={carouselA} />
+                                    <h2>E-commerce stores</h2>
+                                </div>
+                                <div id="carousel-portfolio">
+                                    <img className="carousel-img" alt="carousel portfolio" src={carouselB} />
+                                    <h2>Creative portfolios</h2>
+                                </div>
+                                <div id="carousel-brand">
+                                    <img className="carousel-img" alt="carousel business" src={carouselC} />
+                                    <h2>Brochure sites</h2>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 {/* <img id="hero-image" src={HeroImage}/> */}

@@ -67,7 +67,7 @@
     
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     text-align: end;
     transition: 0.2s all ease;
 
@@ -91,7 +91,6 @@
     .ctaWrapper {
         display: flex;
         margin: 20px 0;
-        width: 100%;
         justify-content: flex-end;
 
         a {
@@ -121,6 +120,12 @@
                 font-size: 0.8em;
                 margin: 0 0 0 10px;
             }
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 200%;
+            margin-right: 20px;
+            transform: translateX(-25%);
         }
     }
     

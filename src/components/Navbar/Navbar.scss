@@ -1,5 +1,5 @@
 .nav-container {
-    padding-top: 50px;
+    padding-top: 30px;
     position: fixed;
     padding-left: 15vw;
     padding-right: 15vw;
@@ -17,9 +17,10 @@
     cursor: pointer;
 
     #nav-logo {
+        transform: translateX(-120%);
         img {
 
-        height: 50px;
+        height: 40px;
         }
         color: #e67e22;
     }
